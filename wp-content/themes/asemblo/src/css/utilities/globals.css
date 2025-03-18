@@ -7,3 +7,8 @@
 .section--white {
   background-color: var(--white);
 }
+.subpage-main {
+  display: grid;
+  place-content: center;
+  min-height: 80vh;
+}

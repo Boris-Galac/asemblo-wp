@@ -170,7 +170,7 @@
         </div>
     </section>
     <!-- 👉 PARTNERSHIP section -->
-    <section class="partnership">
+    <section class="partnership" id="partnership">
         <div class="container">
             <div class="partnership__wrapper">
                 <h2 class="h2-heading">Why We Are Your Ideal Partner</h2>

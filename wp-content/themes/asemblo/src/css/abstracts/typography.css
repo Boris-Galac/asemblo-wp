@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+p {
+  line-height: 160%;
+  font-weight: 200;
+}
+.h2-heading {
+  background: linear-gradient(to right, #ffffff, #6ea1e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(40px, 7vw, 80px);
+  text-align: center;
+  line-height: 100%;
+  font-weight: 300;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+@media (min-width: 1152px) {
+  .h2-heading {
+    margin-bottom: 5vh;
+  }
+}
+.headline {
+  display: grid;
+  margin-bottom: 8px;
+}
+.headline span {
+  text-transform: uppercase;
+  line-height: 100%;
+  background: linear-gradient(to right, var(--white), #6ea1e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(40px, 7vw, 80px);
+}
+.headline span:nth-child(even) {
+  font-weight: 300;
+}
+.subheadline {
+  margin-bottom: 16px;
+}
+.section--white p,
+.greet span {
+  color: var(--paragraph-dark-clr);
+}
+.greet p,
+.greet span {
+  text-align: center;
+}
+.h2-heading--dark {
+  background: linear-gradient(to right, #005397, #6ea1e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.greet-h2-heading {
+  text-transform: none;
+}
+.solutions-h2-heading {
+  color: var(--dark);
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 110%;
+  font-size: clamp(28px, 7vw, 40px);
+}

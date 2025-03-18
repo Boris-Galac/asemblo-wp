@@ -1,0 +1,23 @@
+.hero__illustration {
+  animation: hero-img 4s forwards;
+}
+@keyframes hero-img {
+  from {
+    clip-path: circle(4.1% at 50% 50%);
+    opacity: 0;
+  }
+  to {
+    clip-path: circle(70.7% at 50% 50%);
+    opacity: 1;
+  }
+}
+
+[wb-data="text"],
+.char {
+  visibility: hidden;
+}
+
+.w-editor [wb-data="text"],
+.w-editor .char {
+  visibility: visible;
+}

@@ -1,0 +1,22 @@
+.offer-feature {
+  padding: 16px;
+  outline: 1px solid var(--primary-clr);
+  border-radius: 8px;
+  box-shadow: 0 0 16px 0px hsl(259, 93%, 38%);
+  display: grid;
+  place-items: center;
+}
+
+.offer-feature img {
+  margin-bottom: 16px;
+}
+.offer-feature__body {
+  text-align: center;
+}
+.h4-heading {
+  font-size: clamp(24px, 7vw, 32px);
+  text-transform: uppercase;
+  line-height: 110%;
+  font-weight: 400;
+  margin-bottom: 8px;
+}

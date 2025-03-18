@@ -1,0 +1,9 @@
+:root {
+  --black: #000;
+  --dark: hsl(210, 9%, 17%);
+  --white: #fff;
+  --body-clr: hsl(276, 17%, 6%);
+  --paragraph-dark-clr: hsl(207, 20%, 19%);
+  --primary-clr: hsl(260, 100%, 55%);
+  --dark-blue: hsl(229, 76%, 10%);
+}

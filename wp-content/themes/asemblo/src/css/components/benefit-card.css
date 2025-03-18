@@ -1,0 +1,20 @@
+.benefit-card {
+  outline: 2px solid rgba(255, 255, 255, 0.254);
+  border-radius: 10px;
+  padding-inline: 16px;
+  padding-block: 48px;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.081),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.681);
+}
+.benefit-card h3 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.benefit-card p {
+  font-weight: 100;
+}

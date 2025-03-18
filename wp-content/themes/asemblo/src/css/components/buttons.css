@@ -1,0 +1,238 @@
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-transform: uppercase;
+  color: var(--white);
+  outline: 1px solid var(--white);
+  width: max-content;
+  border-radius: 10px;
+  padding-inline: 24px;
+  padding-block: 10px;
+  height: max-content;
+}
+.ham-btn {
+  position: relative;
+  aspect-ratio: 1;
+  width: 3.5rem;
+  margin-left: auto;
+  display: grid;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.124);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+.cta-btn {
+  background: linear-gradient(to right, hsl(223, 77%, 41%), hsl(0, 0%, 0%));
+  background-size: 400% 400%;
+  box-shadow: 0 0 54px hsl(265, 99%, 54%);
+  outline-color: rgb(174, 33, 255);
+  animation: gradient 5s ease infinite;
+  transition: 0.5s;
+}
+.cta-btn:hover {
+  box-shadow: 0 0 54px 20px hsl(265, 99%, 54%);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.scroll-down-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  scale: 0.7;
+}
+@media (min-width: 1152px) {
+  .scroll-down-btn {
+    position: absolute;
+    bottom: 32px;
+    right: unset;
+    transform: translateX(-50%);
+    left: 50%;
+    scale: 1;
+  }
+}
+/* SCROLL DOWN */
+.scrolldown {
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  position: relative;
+  width: var(--sizeX);
+  height: var(--sizeY);
+  margin-left: var(sizeX / 2);
+  border: calc(var(--sizeX) / 10) solid var(--color);
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color);
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #2a547066;
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+
+  80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+  }
+
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}
+
+.chevrons {
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid var(--color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+  animation: pulse54012 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+  animation: pulse54012 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse54012 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+/* BACK TO TOP */
+.back-to-top-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  transition: 0.3s;
+  z-index: 100;
+}
+.back-to-top-btn[data-visible="false"] {
+  opacity: 0;
+  pointer-events: none;
+}
+.back-to-top-btn[data-visible="true"] {
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(181, 160, 255);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+.linkedin-btn {
+  position: absolute;
+  left: 3vw;
+  bottom: 2vh;
+  transition: 0.3s;
+}
+.linkedin-btn:hover {
+  scale: 1.1;
+}
